@@ -1,3 +1,4 @@
+
 CheckPresentAbsent(){
 rand=$(($RANDOM%2))
 if(($rand<1))
@@ -9,4 +10,13 @@ fi
 echo "$rand"
 }
 CheckPresentAbsent
+
+
+DailyEmployeeWage(){
+	PerHourWage=20
+	TotalHour=8
+	EmployeeWagePerDay=$(($PerHourWage*$TotalHour))
+	echo "Employee wage in a day is:$EmployeeWagePerDay"
+}
+DailyEmployeeWage
 
