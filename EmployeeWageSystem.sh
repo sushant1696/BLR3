@@ -4,4 +4,4 @@ DailyEmployeeWage(){
 	EmployeeWagePerDay=$(($PerHourWage*$TotalHour))
 	echo "Employee wage in a day is:$EmployeeWagePerDay"
 }
-DailyEmployeeWage
+
