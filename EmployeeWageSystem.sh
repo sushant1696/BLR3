@@ -8,4 +8,4 @@ echo "Employee is present"
 fi
 echo "$rand"
 }
-CheckPresentAbsent
+
