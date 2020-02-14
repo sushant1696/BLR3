@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 echo "1-> check attendance"
 echo "2-> daily employee wage calculation"
 echo "3-> part time employee wage calculation "
 value=$1
 case $value in 
 1 )
+=======
+
+>>>>>>> parent of 2741c61... [Sushant]Refectore.resolved the conflict of usecase3
 CheckPresentAbsent(){
 rand=$(($RANDOM%2))
 if(($rand<1))
@@ -27,6 +31,7 @@ DailyEmployeeWage(){
 DailyEmployeeWage
 ;;
 
+<<<<<<< HEAD
 3 )
 PartTimeEmployee(){
 	echo "enter a part time Employee "
@@ -41,3 +46,5 @@ PartTimeEmployee(){
 PartTimeEmployee
 ;;
 esac
+=======
+>>>>>>> parent of 2741c61... [Sushant]Refectore.resolved the conflict of usecase3
