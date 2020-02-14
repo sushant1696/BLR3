@@ -1,5 +1,6 @@
+<<<<<<< HEAD
 echo "Wellcome to the Employee wage system"
-
+=======
 CheckPresentAbsent(){
 rand=$(($RANDOM%2))
 if(($rand<1))
@@ -11,3 +12,4 @@ fi
 echo "$rand"
 }
 
+>>>>>>> UseCase1{EmployeeAttendance}
