@@ -1,4 +1,5 @@
 
+
 echo "Wellcome to the Employee wage system"
 
 CheckPresentAbsent(){
@@ -86,4 +87,16 @@ WagescalculationInCondition()
 }
 WagescalculationInCondition
 echo "total wage is $totalwage"
+
+
+ WorkHourCalculate()
+{
+	echo "enter the wage : "
+	read wage
+	workhours=$(( $wage / 20 ))
+	echo "work hour : $workhours"
+	return $workhours
+}
+WorkHourCalculate
+echo "employe work hour is
 
