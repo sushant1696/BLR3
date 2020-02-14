@@ -1,18 +1,23 @@
-
-
+echo "1-> check attendance"
+echo "2-> daily employee wage calculation"
+echo "3-> part time employee wage calculation "
+value=$1
+case $value in 
+1 )
 CheckPresentAbsent(){
 rand=$(($RANDOM%2))
 if(($rand<1))
 then
 echo "Sorry! Employee is absent"
 else
-echo "Employee is present"
+echo "yes,Employee is present"
 fi
 echo "$rand"
 }
 CheckPresentAbsent
+;;
 
-
+2 )
 DailyEmployeeWage(){
 	PerHourWage=20
 	TotalHour=8
@@ -20,8 +25,9 @@ DailyEmployeeWage(){
 	echo "Employee wage in a day is:$EmployeeWagePerDay"
 }
 DailyEmployeeWage
+;;
 
-
+3 )
 PartTimeEmployee(){
 	echo "enter a part time Employee "
 	read name
@@ -30,7 +36,8 @@ PartTimeEmployee(){
 	read wage
 	totalhour=4
 	PertTimeWage=$(($wage*$totalhour))
-	echo " price of part time employee is =$PertTimeWage"
+	echo "Total price of part time employee is =$PertTimeWage"
 }
 PartTimeEmployee
-
+;;
+esac
