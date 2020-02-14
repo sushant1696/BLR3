@@ -8,4 +8,4 @@ PartTimeEmployee(){
 	PertTimeWage=$(($wage*$totalhour))
 	echo " price of part time employee is =$PertTimeWage"
 }
-PartTimeEmployee
+
