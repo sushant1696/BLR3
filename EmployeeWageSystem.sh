@@ -20,7 +20,7 @@ echo "monthly wage is $monthlywage"
 
  DayDailyWageAndTotalWage()
 {
-	echo "enter the day" 
+	echo "enter any day" 
 	read day
         DailyEmployeeWage
         EmployeeWagePerDay=$?
