@@ -1,5 +1,6 @@
 
 
+
 echo "Wellcome to the Employee wage system"
 
 CheckPresentAbsent(){
@@ -15,6 +16,7 @@ echo "$rand"
 
 #return $rand
 }
+
 
 
 
@@ -53,8 +55,6 @@ WagePerMonth(){
 }
 WagePerMonth
 echo "monthly wage is $monthlywage"
-
-
 WagescalculationInCondition()
 {
 	hours=0
@@ -99,4 +99,15 @@ echo "total wage is $totalwage"
 }
 WorkHourCalculate
 echo "employe work hour is
+
+DailyWageAndTotalWage()
+{
+	DailyEmployeeWage
+	EmployeeWagePerDay=$?
+	WagePerMonth
+	echo "Daily Wage : $EmployeeWagePerDay " 
+	echo "Total Wage : $monthlywage " 
+
+}
+DailyWageAndTotalWage
 
