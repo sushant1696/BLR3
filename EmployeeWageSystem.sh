@@ -1,6 +1,4 @@
 
-
-
 echo "Wellcome to the Employee wage system"
 
 CheckPresentAbsent(){
@@ -17,13 +15,11 @@ echo "$rand"
 #return $rand
 }
 
-
-
-
 DailyEmployeeWage(){
 	PerHourWage=20
 	TotalHour=8
 	EmployeeWagePerDay=$(($PerHourWage*$TotalHour))
+
 
 
 	echo "Employee wage in a day is:$EmployeeWagePerDay"
@@ -39,13 +35,13 @@ PartTimeEmployee(){
 	echo " price of part time employee is =$PertTimeWage"
 }
 
-
-
 	return $EmployeeWagePerDay
 	
 }
 DailyEmployeeWage
 echo "Employee wage in a day is:$EmployeeWagePerDay"
+
+
 WagePerMonth(){
 	day=20
 	DailyEmployeeWage
@@ -55,6 +51,7 @@ WagePerMonth(){
 }
 WagePerMonth
 echo "monthly wage is $monthlywage"
+
 WagescalculationInCondition()
 {
 	hours=0
@@ -110,4 +107,18 @@ DailyWageAndTotalWage()
 
 }
 DailyWageAndTotalWage
+
+
+ DayDailyWageAndTotalWage()
+{
+	echo "enter any day" 
+	read day
+        DailyEmployeeWage
+        EmployeeWagePerDay=$?
+       WagePerMonth
+	echo "Day : $day " 
+        echo "Daily Wage : $EmployeeWagePerDay " >> file1.txt
+        echo "Total Wage : $monthlywage " >> file1.txt
+ }
+    DayDailyWageAndTotalWage
 
